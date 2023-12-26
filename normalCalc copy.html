@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalCalc copy.css">
+</head>
+<body>
+    <table class="calculator">
+        <th id="display"></th>
+        <tr class="calc-button-row equations">
+            <td class="calc-button-item"><button value="+" onclick="addToDisplay(value)">+</button></td>
+            <td class="calc-button-item"><button value="-" onclick="addToDisplay(value)">-</button></td>
+            <td class="calc-button-item"><button value="x">x</button></td>
+            <td class="calc-button-item"><button value="/">/</button></td>
+        </tr>
+        <tr class="calc-button-row">
+            <td class="calc-button-item"><button value="7" onclick="addToDisplay(value)">7</button></td>
+            <td class="calc-button-item"><button value="8" onclick="addToDisplay(value)">8</button></td>
+            <td class="calc-button-item"><button value="9" onclick="addToDisplay(value)">9</button></td>
+            <td class="calc-button-item equals" rowspan="4"><button value="=" onclick="addToDisplay(value)">=</button></td>
+        </tr>
+        <tr class="calc-button-row">
+            <td class="calc-button-item"><button value="4" onclick="addToDisplay(value)">4</button></td>
+            <td class="calc-button-item"><button value="5" onclick="addToDisplay(value)">5</button></td>
+            <td class="calc-button-item"><button value="6" onclick="addToDisplay(value)">6</button></td>
+        </tr>
+        <tr class="calc-button-row">
+            <td class="calc-button-item"><button value="1" onclick="addToDisplay(value)">1</button></td>
+            <td class="calc-button-item"><button value="2" onclick="addToDisplay(value)">2</button></td>
+            <td class="calc-button-item"><button value="3" onclick="addToDisplay(value)">3</button></td>
+        </tr>
+        <tr class="calc-button-row">
+            <td class="calc-button-item"><button value="0" onclick="addToDisplay(value)">0</button></td>
+            <td class="calc-button-item"><button value=".">.</button></td>
+            <td class="calc-button-item"><button value="C">C</button></td>
+        </tr>        
+    </table>
+    <script src="normalCalc copy.js"></script>
+</body>
+</html>
