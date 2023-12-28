@@ -10,16 +10,18 @@
     <table class="calculator">
         <th id="display"></th>
         <tr class="calc-button-row equations">
-            <td class="calc-button-item"><button value="+" onclick="addToDisplay(value)">+</button></td>
-            <td class="calc-button-item"><button value="-" onclick="addToDisplay(value)">-</button></td>
-            <td class="calc-button-item"><button value="x">x</button></td>
-            <td class="calc-button-item"><button value="/">/</button></td>
+            <td class="calc-button-item"><button value="+" onclick="addSymbolToDisplay(value)">+</button></td>
+            <td class="calc-button-item"><button value="-" onclick="addSymbolToDisplay(value)">-</button></td>
+            <td class="calc-button-item"><button value="x" onclick="addSymbolToDisplay(value)">x</button></td>
+            <td class="calc-button-item"><button value="/" onclick="addSymbolToDisplay(value)">/</button></td>
         </tr>
         <tr class="calc-button-row">
             <td class="calc-button-item"><button value="7" onclick="addToDisplay(value)">7</button></td>
             <td class="calc-button-item"><button value="8" onclick="addToDisplay(value)">8</button></td>
             <td class="calc-button-item"><button value="9" onclick="addToDisplay(value)">9</button></td>
-            <td class="calc-button-item equals" rowspan="4"><button value="=" onclick="addToDisplay(value)">=</button></td>
+            <td class="calc-button-item equals" rowspan="4">
+                <button value="=" onclick="addSymbolToDisplay(value)">=</button>
+            </td>
         </tr>
         <tr class="calc-button-row">
             <td class="calc-button-item"><button value="4" onclick="addToDisplay(value)">4</button></td>
@@ -33,8 +35,8 @@
         </tr>
         <tr class="calc-button-row">
             <td class="calc-button-item"><button value="0" onclick="addToDisplay(value)">0</button></td>
-            <td class="calc-button-item"><button value=".">.</button></td>
-            <td class="calc-button-item"><button value="C">C</button></td>
+            <td class="calc-button-item"><button value="." onclick="addToDisplay(value)">.</button></td>
+            <td class="calc-button-item"><button value="C" onclick="addSymbolToDisplay(value)">C</button></td>
         </tr>        
     </table>
     <script src="normalCalc copy.js"></script>
