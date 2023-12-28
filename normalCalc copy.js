@@ -1,9 +1,8 @@
 let runningTotal = 0;
-var previuschar;
 var buffer = 0;
 var symbol = "";
-
 const display = document.getElementById("display");
+const afterDisplay = document.getElementById("display-after");
 
 
 function addToDisplay(value) {
@@ -25,6 +24,13 @@ function updateDisplay() {
 
 function makeOperation() {
 
+    if( symbol == '-'){
+        afterDisplay.innerText =  runningTotal + " " +  " " + buffer + ' = ';
+    }
+    else{
+        afterDisplay.innerText =  runningTotal + " " + symbol + " " + buffer + ' = ';
+    }
+    
     runningTotal = parseFloat(runningTotal);
     buffer = parseFloat(buffer);
 
@@ -50,8 +56,13 @@ function makeOperation() {
             updateDisplay();
             break;
     }
+    
 }
+
+
 function addSymbolToDisplay(value) {
+    
+    afterDisplay.innerText = buffer + symbol;
     switch (value) {
         case '+':
             runningTotal = buffer;
@@ -87,6 +98,7 @@ function addSymbolToDisplay(value) {
             buffer = 0;
             runningTotal = 0;
             updateDisplay();
+            afterDisplay.innerText = "";
             break;
 
         case '.':
@@ -99,6 +111,24 @@ function addSymbolToDisplay(value) {
             makeOperation();
             updateDisplay();
             break;
+        case '←':
+            voltar();
+            console.log(buffer);
+            buffer = parseFloat(buffer);
+            updateDisplay();
+            afterDisplay.innerText = buffer + symbol;
+            break;
     }
+    
 }
-
+function voltar() {
+    buffer = buffer + ""
+    if(buffer != '+' || '-' || '*' || '/'){
+        const comprimento = buffer.length;
+            if (comprimento > 1 ) {
+                buffer = buffer.slice(0, comprimento - 1);
+            } else {
+                buffer = "";
+            }
+    }
+  }

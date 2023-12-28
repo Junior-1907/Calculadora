@@ -20,8 +20,16 @@
     color: white;
     font-size: 50px;
     text-align: right;
+    padding-top: 10px;
     padding-right: 65px;
     font-family: Arial, Helvetica, sans-serif;
+  }
+  #display-after{
+    position: absolute;
+    right: 15%;
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
   }
 
   .calc-button-row {
@@ -64,7 +72,7 @@
   }
   
   .equals button{
-    height: 400%;
+    height: 300%;
     background: rgb(247,125,79);
     background: linear-gradient(189deg, rgba(247,125,79,1) 0%, rgba(170,80,46,1) 75%);
     transition: 0.3s all;
