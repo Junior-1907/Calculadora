@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(57,114,233);
+    background: linear-gradient(135deg, rgba(57,114,233,1) 0%, rgba(152,84,199,1) 92%);
+  }
+#list-bg{
+    
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#list-bg{
+    text-align: center;
+}
+#list-bg h1{
+    padding-bottom: 20px;
+    margin-left: 50px;
+    font-size: 36px;
+    
+}
+#list-bg #div-btn input{
+    border: none;
+    outline: none;
+    width: 75%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(233, 234, 234);
+    font-size: 16px;
+    text-indent: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.3s;
+}
+#list-bg #div-btn input:focus{
+    height: 55px;
+    width: 76%;
+    border: 1px solid rgb(199, 201, 201);
+    box-shadow: 1px 1px 3px;
+}
+#list-bg #div-btn input:focus + button {
+    height: 55px;
+    width: 26%;
+    box-shadow: 1px 1px 3px;
+}
+
+#list-bg #div-btn button{
+    border: none;
+    outline: none;
+    position: absolute;
+    width: 25%;
+    height: 50px;
+    right: 30px;
+    border-radius: 50px;
+    background-color: rgb(255, 149, 0);
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor:pointer;
+    transition: all 0.3s;
+}
+#list-bg #div-btn button:hover{
+    background-color: rgb(247, 154, 23);
+}
+#list-bg #div-btn button:active{
+    background-color: rgb(255, 149, 0);
+    width: 24%;
+    height: 48px;
+    right: 38px;
+}
+#div-btn{
+    width: 110%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-53.5%);
+}
+#tasks{
+    margin-top: 100px;
+    border: 1px solid;
+    height: 100%;
+}
+.task{
+    width: 80%;
+    border-bottom: 2px solid;
+}

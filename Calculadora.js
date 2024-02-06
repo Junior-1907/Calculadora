@@ -132,3 +132,10 @@ function voltar() {
             }
     }
   }
+
+  
+  function modoNoturno() {
+    
+    document.querySelector('body').classList.toggle('noturno');
+  }
+  
